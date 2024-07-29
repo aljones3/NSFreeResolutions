@@ -63,7 +63,8 @@ R = S/I;
 M = coker vars R;
 minimalBetti (M, LengthLimit => maxLen))
 
--- !!! not sure what this one does, someone please edit !!!
+-- This code returns a list of graded degrees of the first homDegree 
+-- modules of the infinite free resolution of k over k[S].
 EGANSInfiniteDegreeList := (m, h, d, k, homDegree) -> (
 L = {m};
 for i from 1 to k do (L = append(L, m*h + i*d));
